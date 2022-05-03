@@ -1,0 +1,28 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> COLOR CHANGEING </title>
+    </head> 
+    <body style = "text-align:center;">  
+        <h1 style = "color:dodgerblue;" > Background Color Changeing 
+        </h1>  
+        <p id = "GFG_UP" style ="font-size: 16px; font-weight: bold;">     
+        </p> 
+        <button onclick = "ggg_Run()"> Click here</button> 
+        <p id = "GFG_DOWN" style ="color:dodgerblue; font-size: 20px; font-weight: bold;">
+        </p>
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+            var str = "Click on the button the background color will be changed";
+            el_up.innerHTML = str;
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+            function ggg_Run() {
+                changeColor('pink');
+                el_down.innerHTML = "Background Color changed";
+            }         
+        </script> 
+    </body> 
+</html>                    

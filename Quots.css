@@ -1,0 +1,25 @@
+body{
+    background-color:aliceblue;
+}
+.container{
+    background-color:cornflowerblue;
+    border: 7px solid black;
+    border-radius: 7px;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+#btn{
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(251, 218, 177);
+}
+#output{
+    font-size: 35px;
+    margin: 25px auto;
+    color:black;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Navigation Bar</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .menu-list {
+            max-width: 300px;
+            margin: auto;
+            height: 500px;
+            color: white;
+            background-color:cadetblue;
+            border-radius: 10px;
+        }
+        .new{
+            overflow: hidden;
+            background-color: #111;
+            position: relative;
+        }
+        .new #menus {
+            display: none;
+        }
+        .new a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            font-size: 16px;
+            display: block;
+        }
+        .new a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .new a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-list">
+        <div class="new">
+            <a href="#" class=""><b>Mylist</b></a><hr>
+            <div id="menus">
+                <a href="#">Language</a>
+                <a href="#">Practice</a>
+                <a href="#">Time Management</a>
+                <a href="#">Interview</a>
+                <a href="#">Puzzle</a>
+                <a href="#">Coding</a>
+            </div>
+            <a href="javascript:void(0);" class="icon"
+                    onclick="MyList()">
+                <i onclick="myFunction(this)"
+                    class="fa fa-plus-circle">
+                </i>
+          </a>
+        </div>
+    </div>
+    <script>
+        function MyList() {
+            var x = document.getElementById("menus");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        function myFunction(x) {
+            x.classList.toggle("fa-minus-circle");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+</head>
+<style>
+      body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.container {
+    border: 5px solid rgb(39, 34, 34);
+    width: 800px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color:cornflowerblue;
+}
+#title {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+#counter {
+    font-size: 2rem;
+}
+button {
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+    background-color:whitesmoke;
+    border: none;
+    color: black;
+    font-weight: bold;
+    margin: 1rem;
+    cursor: pointer;
+}
+button:hover{
+  background-color: #4c4fd4;
+  color: white;
+}
+h2{
+  color: rgb(14, 13, 13);
+}
+h3{
+  color: white;
+}
+</style>
+<script>
+    var count = 0;
+function add() {
+    count += 10;
+    document.getElementById('counter').innerHTML = count;
+}
+function lower() {
+    count -= 10;
+    document.getElementById('counter').innerHTML = count;
+}
+</script>
+<body>    
+<section id="main">
+    <div class="container">
+        <h2 id="title">Number Counter</h2>
+<h3 id="counter">0</h3>
+<div class="btn-container">
+    <button id="add" onclick="add()">Add 10</button>
+    <button id="lower" onclick="lower()">Reduce 10</button>
+</div>
+</div>
+</section>
+</body>
+</html>

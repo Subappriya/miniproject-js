@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <style>
+        body{
+        padding:10% 3% 10% 3%;
+        text-align:center;
+        }
+        img{
+            height:140px;
+            width:140px;
+        }
+        h1{
+        color: #32a852;
+        }
+        .mode {
+            float:right;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+    </style>
+</head> 
+<body>
+    <div class="mode">Dark mode:            
+      <span class="change">OFF</span>
+    </div>
+    <div>
+        <h1>CLICK THE BUTTON</h1><p><i>welcome to my dark mode project</i></p>
+        <h3>Light and Dark Mode</h3>
+        <img src="data:image/jpeg;base64,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">    
+    <p>Click on the switch on top-rightto move to dark mode.</p>
+    </div>
+    <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+</body>
+</html>
